@@ -2,19 +2,83 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Forecast - Alert!</title>
-	
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+  <title>Forecast - Alert!</title>
+
+  <link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 </head>
+
 <body>
-	<!-- your single-location forecast with alert interface here -->
+  <!-- your single-location forecast with alert interface here -->
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-sm-12 forecast">
+
+        <div class="row">
+          <div class="col-sm-3">
+            <br>
+            
+            <a href="/weather/comparison/alert/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true"><i class="glyphicon glyphicon-menu-hamburger"></i></a>
+          </div>
+          <div class="col-sm-5">
+            <img src="http://downloadicons.net/sites/default/files/blue-cloudy-symbol-icon-38700.png" height=500></img>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-5">
+          </div>
+          <div class="col-sm-5">
+            &nbsp; &nbsp; &nbsp; <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Warning_icon.svg/1153px-Warning_icon.svg.png" height=100></img>
+          </div>
+        </div>
+        <br>
+
+        <div class="row">
+          <div class="col-sm-4">
+          </div>
+          <div class="col-sm-5">
+            <br>
+            <h1>
+              &nbsp; &nbsp; &nbsp; &nbsp;<i class="glyphicon glyphicon-map-marker"></i> Berkeley
+            </h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-5">
+          </div>
+          <div class="col-sm-5">
+            <h1>
+              &nbsp; &nbsp; 17 &deg;C
+            </h1>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+          <br>
+          <br>
+          <div class="col-sm-1">
+          </div>
+          <div class="col-sm-10">
+            <div class="slidecontainer">
+              <p>Time: 9:00 AM<span id="demo"></span></p>
+              <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            </div>
+          </div>
+          <br>
+          <br>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </body>
+
 </html>
-
-
-
-
-
